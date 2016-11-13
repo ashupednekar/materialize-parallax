@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- build:css styles/vendor.css-->
+		<!-- bower:css-->
+		<!-- <link rel = "stylesheet" href = "../bower_components/materialize/bin/materialize.css" /> -->
+		<link rel = "stylesheet" href = "materialize/css/materialize.min.css" />
+		<!-- endbower-->
+		<!-- endbuild-->
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- <link rel = "stylesheet" href = "styles/application.css" /> -->
+
+	</head>
+	<body>
+		<nav>
+			<div class="nav-container">
+				<div class="nav-wrapper">
+					<a href="#" class="brand-logo" style="padding-left:50px">Demo</a>
+				</div>
+				
+				<ul id="slide-out" class="side-nav">
+					<li><a href="#">Demo side-nav </a></li>
+				</ul>
+				<a href="#" class="button-collapse right" data-activates="slide-out" data-sidenav="right" style="display:inline;padding-right:20px"><i class="material-icons">menu</i></a>
+			</div>
+		</nav>
+		<div class="parallax-container">
+    		<div class="parallax">
+    			<img src="images/image1.jpg" style="display: block;">
+    		</div>
+		</div>
+			<div class="section white">
+    		<div class="row container">
+      		<h2 class="header">Parallax</h2>
+      		<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>	
+    		</div>
+  			</div>
+		<div class="parallax-container">
+    		<div class="parallax"><img src="images/image1.jpg" style="display:block;"></div>
+		</div>
+		<div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt nec risus non luctus. Proin vel risus ac ligula interdum eleifend malesuada at ante. Nulla ac semper lectus, vel tristique est. Sed imperdiet eros odio. Mauris eu mauris vitae odio ultrices mattis. Ut et erat sit amet urna hendrerit varius sed ut nibh. Vestibulum sit amet volutpat magna. Nam vitae interdum mauris, et scelerisque metus. Ut sagittis posuere volutpat. Aliquam fermentum lectus id varius ornare. Mauris bibendum justo ac nisl congue semper. Mauris vulputate nulla at dictum tempus.</p>
+		</div>
+		<div class="parallax-container">
+    		<div class="parallax"><img src="images/image1.jpg" style="display:block;"></div>
+		</div>
+		<div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt nec risus non luctus. Proin vel risus ac ligula interdum eleifend malesuada at ante. Nulla ac semper lectus, vel tristique est. Sed imperdiet eros odio. Mauris eu mauris vitae odio ultrices mattis. Ut et erat sit amet urna hendrerit varius sed ut nibh. Vestibulum sit amet volutpat magna. Nam vitae interdum mauris, et scelerisque metus. Ut sagittis posuere volutpat. Aliquam fermentum lectus id varius ornare. Mauris bibendum justo ac nisl congue semper. Mauris vulputate nulla at dictum tempus.</p>
+		</div>
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<!-- build:js scripts/vendor.js-->
+		<!-- bower:js-->
+		<!-- <script type="text/javascript" src="jquery/jquery.js"></script> -->
+		<script type="text/javascript" src="materialize/js/materialize.js"></script>
+		<!-- endbower-->
+		<!-- endbuild-->
+
+		<!-- <script type="text/javascript" src="scripts/script.js"></script> -->
+		<script type="text/javascript">
+		$(document).ready(function(){
+			  console.log("init");
+		      $('.parallax').parallax();
+		      $('.button-collapse').sideNav({
+		      	menuWidth:250,
+		      	edge:'right',
+		      	closeOnClick: true
+		      });
+		      console.log("init1");
+		    });
+		</script>
+	</body>
+</html>
